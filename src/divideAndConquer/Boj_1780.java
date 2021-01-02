@@ -1,4 +1,4 @@
-package DivideAndConquer;
+package divideAndConquer;
 
 import java.util.Arrays;
 import java.util.Scanner;
