@@ -5,7 +5,7 @@ import java.util.LinkedList;
 import java.util.stream.Collectors;
 
 // https://tech.kakao.com/2021/01/25/2021-kakao-recruitment-round-1/
-public class Kakao2020_1 {
+public class Kakao2021_1 {
     public static void main(String[] args) {
         Solution solution = new Solution();
         System.out.println("result = " + "bat.y.abcdefghi".equals(solution.solution(	"...!@BaT#*..y.abcdefghijklm")));
