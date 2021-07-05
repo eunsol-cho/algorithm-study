@@ -1,4 +1,4 @@
-package codingtest;
+package codingtest.kakao2021;
 
 import java.util.*;
 
