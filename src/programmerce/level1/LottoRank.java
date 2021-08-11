@@ -1,8 +1,6 @@
 package programmerce.level1;
 
 import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
 import java.util.stream.LongStream;
 
 public class LottoRank {
