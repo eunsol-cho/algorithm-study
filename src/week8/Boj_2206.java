@@ -68,7 +68,7 @@ public class Boj_2206 {
     }
 }
 
-class XY {
+/*class XY {
     int x;
     int y;
     int d;
@@ -80,4 +80,4 @@ class XY {
         this.d = d;
         this.cnt = cnt;
     }
-}
+}*/
