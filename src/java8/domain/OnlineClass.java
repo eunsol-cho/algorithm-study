@@ -1,9 +1,10 @@
-package java8.streamtest;
+package java8.domain;
 
 public class OnlineClass {
     private Integer id;
     private String title;
     private boolean closed;
+    public Progress progress;
 
     public OnlineClass(Integer id, String title, boolean closed) {
         this.id = id;
@@ -33,6 +34,14 @@ public class OnlineClass {
 
     public void setClosed(boolean closed) {
         this.closed = closed;
+    }
+
+    public Progress getProgress() {
+        return progress;
+    }
+
+    public void setProgress(Progress progress) {
+        this.progress = progress;
     }
 
     @Override

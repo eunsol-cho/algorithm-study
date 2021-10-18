@@ -1,12 +1,14 @@
 package java8.streamtest;
 
+import java8.domain.OnlineClass;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class App {
+public class StreamTestApp {
     public static void main(String[] args) {
         List<OnlineClass> springClasses = new ArrayList<>();
         springClasses.add(new OnlineClass(1, "spring boot", true));
