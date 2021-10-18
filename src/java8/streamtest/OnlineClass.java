@@ -34,4 +34,13 @@ public class OnlineClass {
     public void setClosed(boolean closed) {
         this.closed = closed;
     }
+
+    @Override
+    public String toString() {
+        return "OnlineClass{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", closed=" + closed +
+                '}';
+    }
 }
