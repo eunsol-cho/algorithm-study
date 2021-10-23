@@ -30,9 +30,9 @@ class Solution_배달 {
 
         // 도달여부 파악
         int answer = 0;
+        int[] distance = getDistance(N, K);
         for (int i = 1; i <= N; i++) {
-            if (takesLessThan(i, N, K)) {
-                System.out.println(i);
+            if (distance[i] <= K) {
                 answer++;
             }
         }
@@ -45,7 +45,7 @@ class Solution_배달 {
         adj.put(nodeA, nodes);
     }
 
-    private boolean takesLessThan(int destination, int N, int k) {
+    private int[] getDistance(int N, int k) {
         PriorityQueue<Node> q = new PriorityQueue<>();
         int[] visit = new int[N + 1];
         for (int i = 1; i <= N; i++) {
@@ -68,7 +68,8 @@ class Solution_배달 {
             }
 
         }
-        return visit[destination] <= k;
+
+        return visit;
     }
 }
 
