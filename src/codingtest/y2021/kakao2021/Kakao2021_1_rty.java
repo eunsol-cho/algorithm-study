@@ -1,4 +1,4 @@
-package codingtest.kakao2021;
+package codingtest.y2021.kakao2021;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

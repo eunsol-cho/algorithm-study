@@ -12,6 +12,7 @@ public class Hindex {
 }
 
 class Solution_Hindex {
+
     public int solution(int[] citations) {
         int answer = 0;
         Arrays.sort(citations);
@@ -23,17 +24,8 @@ class Solution_Hindex {
             int mid = (left+right)/2;
             int h = citations[mid];
             if (mid-left+1 <= h && h <= right-mid+1) {
-                int nextIdx = mid;
-                while (nextIdx < citations.length && h < citations[nextIdx]) {
-                    nextIdx++;
-                }
-                while (h < citations[nextIdx] && mid-left+1 <= h && h <= right-mid+1) {
-                    h++;
-                }
-
                 answer = h;
-                //left = mid+1;
-                left = nextIdx;
+                left = mid+1;
             } else {
                 right = mid-1;
             }
@@ -41,4 +33,5 @@ class Solution_Hindex {
 
         return answer;
     }
+
 }

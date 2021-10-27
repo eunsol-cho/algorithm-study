@@ -1,5 +1,7 @@
 package java8.domain;
 
+import java.util.Optional;
+
 public class OnlineClass {
     private Integer id;
     private String title;
@@ -36,12 +38,12 @@ public class OnlineClass {
         this.closed = closed;
     }
 
-    public Progress getProgress() {
-        return progress;
+    public Optional<Progress> getProgress() {
+        return Optional.ofNullable(progress);
     }
 
-    public void setProgress(Progress progress) {
-        this.progress = progress;
+    public void setProgress(Optional<Progress> progress) {
+        progress.ifPresent(p -> this.progress = p);
     }
 
     @Override

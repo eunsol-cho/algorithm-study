@@ -1,3 +1,5 @@
+package codingtest.y2021.talentX;
+
 import java.io.*;
 import java.math.*;
 import java.security.*;
