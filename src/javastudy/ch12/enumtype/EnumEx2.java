@@ -1,4 +1,4 @@
-package javastudy.ch12.enumex;
+package javastudy.ch12.enumtype;
 
 enum Direction {
     EAST(1, ">"), SOUTH(2, "V"), WEST(3, "<"), NORTH(4, "^");

@@ -1,4 +1,4 @@
-package javastudy.ch12.enumex;
+package javastudy.ch12.enumtype;
 
 abstract class MyEnum<T extends MyEnum<T>> implements Comparable<T> {
     static int id = 0;

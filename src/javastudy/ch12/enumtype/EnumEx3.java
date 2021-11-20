@@ -1,4 +1,4 @@
-package javastudy.ch12.enumex;
+package javastudy.ch12.enumtype;
 
 enum Transportation {
     BUS(100) {int fare(int distance) {return distance*BASIC_FARE;}},
